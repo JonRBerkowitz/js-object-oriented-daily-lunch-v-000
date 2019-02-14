@@ -56,8 +56,7 @@ class Meal {
     });
   }
   customers() {
-    const customerSet = new Set(let customer of this.deliveries());
-    debugger;
+    const customerSet = new Set([1,2,3]);
   }
 }
 
