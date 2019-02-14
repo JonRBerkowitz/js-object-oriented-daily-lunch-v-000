@@ -56,11 +56,12 @@ class Meal {
     });
   }
   customers() {
-    let customerArr = []
+    let set = new Set();
     this.deliveries().map(delivery => {
-      customerArr.push(delivery.customer());
+      set.add(delivery.customer());
     });
-    return customerArr;
+    let array = [...set]
+    return array;
     }
 }
 
