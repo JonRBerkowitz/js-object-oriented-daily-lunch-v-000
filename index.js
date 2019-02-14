@@ -56,7 +56,6 @@ class Meal {
     });
   }
   customers() {
-    customers() {
       let customerArr = []
       this.deliveries().map(delivery => {
         customerArr.push(delivery.customer());
