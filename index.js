@@ -55,6 +55,10 @@ class Meal {
       return delivery.mealId === this.id;
     });
   }
+  customers() {
+    const customerSet = new Set(let customer of this.deliveries());
+    debugger;
+  }
 }
 
 class Delivery {
