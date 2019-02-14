@@ -51,7 +51,8 @@ class Delivery {
     store.deliveries.push(this);
   }
   meal() {
-    return store.meals.find(meal =>
+    return store.meals.find(meal => {
       return meal.id === this.mealId;
-    );}
+    });
+  }
 }
