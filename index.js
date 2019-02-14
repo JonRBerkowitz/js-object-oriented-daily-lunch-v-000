@@ -76,7 +76,7 @@ class Meal {
     let array = [...set]
     return array;
     }
-    static byPrice() {
+  static byPrice() {
       return store.meals.sort(function(a, b) {
         return a.price - b.price;
       });
