@@ -42,7 +42,7 @@ class Customer {
     });
   }
   totalSpent() {
-    return this.meals.reduce(function(total, meal) {
+    return this.meals().reduce(function(total, meal) {
       return total += meal.price;
     }.bind(this) , 0);
   }
