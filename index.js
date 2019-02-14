@@ -36,7 +36,11 @@ class Customer {
       return delivery.customerId === this.id;
     });
   }
-
+  meals() {
+    return this.deliveries().map(delivery => {
+      return delivery.meal();
+    });
+  }
 }
 
 class Meal {
@@ -52,9 +56,13 @@ class Meal {
     });
   }
   customers() {
-    return this.deliveries().map(delivery => {
-      return delivery;
+    let customerArr = []
+    this.deliveries().map(delivery => {
+      customerArr.push(delivery)
     });
+    customerArr
+    return customerArr;
+  }
 }
 
 class Delivery {
