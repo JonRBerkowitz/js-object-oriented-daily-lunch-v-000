@@ -37,6 +37,6 @@ class Delivery {
     this.mealId = mealId;
     this.neighborhoodId = neighborhoodId;
     this.customerId = customerId;
-    store.delivers.push(this);
+    store.deliveries.push(this);
   }
 }
