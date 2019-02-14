@@ -58,7 +58,7 @@ class Meal {
   customers() {
     let customerArr = []
     customerArr = this.deliveries().map(delivery => {
-      return delivery.customer();
+      return delivery;
     });
     debugger;
     return new Set(customerArr);
