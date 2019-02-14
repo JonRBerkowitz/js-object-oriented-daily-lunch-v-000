@@ -60,7 +60,7 @@ class Meal {
     this.deliveries().map(delivery => {
       customerArr.push(delivery.customer();)
     });
-    return new Set(customerArr);
+    return customerArr;
   }
 }
 
