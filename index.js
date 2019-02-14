@@ -41,6 +41,11 @@ class Customer {
       return delivery.meal();
     });
   }
+  totalSpent() {
+    return this.meals.reduce(function(total, meal) {
+      return total += meal.price;
+    }.bind(this) , 0);
+  }
 }
 
 class Meal {
