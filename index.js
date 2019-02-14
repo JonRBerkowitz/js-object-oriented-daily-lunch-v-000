@@ -60,6 +60,8 @@ class Meal {
     this.deliveries().map(delivery => {
       customerArr.push(delivery)
     });
+    customerArr;
+    debugger;
     return customerArr;
   }
 }
