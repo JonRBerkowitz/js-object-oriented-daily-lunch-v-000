@@ -56,8 +56,7 @@ class Meal {
     });
   }
   customers() {
-    let customerArr = []
-    customerArr = this.deliveries().map(delivery => {
+    this.deliveries().map(delivery => {
       return delivery;
     });
     debugger;
