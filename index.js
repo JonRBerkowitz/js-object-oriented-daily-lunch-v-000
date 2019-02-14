@@ -76,7 +76,7 @@ class Meal {
     let array = [...set]
     return array;
     }
-    uniqueMeals() {
+    static uniqueMeals() {
       let set = new Set();
       store.meals.map(meal => {
         set.add(meal);
