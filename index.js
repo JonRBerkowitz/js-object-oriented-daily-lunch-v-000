@@ -86,6 +86,7 @@ class Meal {
       }
   static byPrice() {
       return this.uniqueMeals().sort(function(a, b) {
+        debugger;
         return a.price - b.price;
       });
     }
