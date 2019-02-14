@@ -13,9 +13,14 @@ class Neighborhood {
     store.neighborhoods.push(this);
   }
   deliveries() {
-      return store.deliveries.filter(function(delivery) {
-        return delivery.neighborhoodId === this.id;
-      }.bind(this));
+    return store.deliveries.filter(function(delivery) {
+      return delivery.neighborhoodId === this.id;
+    }.bind(this));
+  }
+  customers() {
+    return store.customers.filter(function(customer) {
+      return customer.neighborhoodId === this.id;
+    }.bind(this));
   }
 }
 
