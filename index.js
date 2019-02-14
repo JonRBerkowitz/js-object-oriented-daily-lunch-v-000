@@ -76,16 +76,8 @@ class Meal {
     let array = [...set]
     return array;
     }
-  static uniqueMeals() {
-    let set = new Set();
-    store.meals.map(meal => {
-      set.add(meal);
-    });
-    let array = [...set]
-    return array;
-    }
   static byPrice() {
-      return this.uniqueMeals().sort(function(a, b) {
+      return store.meals.sort(function(a, b) {
         return a.price - b.price;
       });
     }
