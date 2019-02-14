@@ -63,6 +63,11 @@ class Meal {
     let array = [...set]
     return array;
     }
+    byPrice() {
+      return store.meals.sort(function(a, b) {
+        return a.price - b.price;
+      });
+    }
 }
 
 class Delivery {
