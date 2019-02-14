@@ -22,21 +22,3 @@ class Customer {
     store.customers.push(this);
   }
 }
-
-class Meal {
-  constructor(title, price) {
-    this.id = mealIds++;
-    this.title = title;
-    this.price = price;
-    store.meals.push(this);
-  }
-}
-
-class Delivery {
-  constructor(mealId, neighborhoodId, customerId) {
-    this.mealId = mealId;
-    this.neighborhoodId = neighborhoodId;
-    this.customerId = customerId;
-    store.delivers.push(this);
-  }
-}
