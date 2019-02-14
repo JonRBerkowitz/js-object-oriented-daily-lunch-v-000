@@ -56,7 +56,7 @@ class Meal {
     });
   }
   customers() {
-    customerArr = this.deliveries().map(delivery => {
+    const customerArr = this.deliveries().map(delivery => {
       return delivery.customer();
     });
     return new Set(customerArr);
